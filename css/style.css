@@ -218,6 +218,17 @@ i {
 	transform: translateX(-50%);
 
 }
+.About #Commingsoon{
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	color: #fff;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 70px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
 #Commingsoon{
 	margin-left: auto;
 	margin-right: auto;
