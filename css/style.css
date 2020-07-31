@@ -151,6 +151,15 @@ i {
 
 
 }
+.counter{
+	position: absolute;
+	margin: 10px;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	height: 25px;
+
+}
 .nav {
 	height: 100%;
 	width: 0;
