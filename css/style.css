@@ -152,7 +152,7 @@ i {
 
 }
 .counter{
-	position: absolute;
+	position: fixed;
 	margin: 5px;
 	bottom: 0;
 	right: 0;
