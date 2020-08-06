@@ -37,6 +37,7 @@ body.Electronics{
 	background-image: url(../images/Ele.jpg);
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: sans-serif;
 	margin: 0;
@@ -213,11 +214,11 @@ i {
 	top: 10px;
 	margin-left: auto;
   margin-right: auto;
-	border-radius: 40px 0px 40px 0px;
+	border-radius: 5px 0px 5px 0px;
 	background-color: rgba(194, 188, 184, 0.7);
 	text-align: center;
 	padding: 10px 15px;
-	width: auto;
+	width: 100%;
 	height: auto;
 	left: 50%;
 	transform: translateX(-50%);
@@ -359,13 +360,16 @@ ul li#active a{
 		.products{
 			position: absolute;
 			width: 100%;
-			left: 50%;
+			left: 55%;
 
 		}
 		#box{
 			height: 300px;
 			width: 100%;;
 			margin-top: 50px;
+		}
+		#spe{
+			left: 55%;
 		}
 		h1{
 			font-size: 2.5em;
@@ -375,7 +379,7 @@ ul li#active a{
 			margin-top: 250px;
 			padding: 10px;
 			width: 80%;
-			left: 50%;
+			left: 55%;
 		}
 		h4{
 			font-size: 1em;
@@ -386,7 +390,7 @@ ul li#active a{
 		}
 	.nav{
 		position: fixed;
-		
+
 	}
 	.fa-angle-right{
 		font-size: 40px;
@@ -397,5 +401,5 @@ ul li#active a{
 	}
 	body.Electronics{
 		background-repeat: no-repeat;
-		background-size: cover;
+		opacity:
 }
