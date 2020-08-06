@@ -38,8 +38,6 @@ body.Electronics{
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: sans-serif;
-	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -86,6 +84,7 @@ h4{
 	background-color: rgba(255,255,255,.8);
 	border-radius: 10px;
 	min-height: 42px;
+	box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
 
 
 }
@@ -192,6 +191,7 @@ i {
 }
 .fa-angle-right{
 	font-size: 40px;
+	position: fixed;
 }
 .slide a {
 	color: #000;
@@ -343,4 +343,54 @@ ul{
 }
 ul li#active a{
 	background: rgba(206, 197, 192, .8);
+}
+@media (max-width: 375px){
+
+		body{
+			height: 100%;
+			width: 100%;
+			overflow-x: hidden;
+		}
+		.products{
+			position: absolute;
+			width: 100%;
+			left: 55%;
+
+		}
+		#box{
+			height: 300px;
+			width: 100%;;
+			margin-top: 50px;
+		}
+		#spe{
+			left: 55%;
+		}
+		h1{
+			font-size: 2.5em;
+			left: 55%;
+		}
+		h2{
+			font-size: 1.1em;
+			margin-top: 250px;
+			padding: 10px;
+			width: 80%;
+			left: 55%;
+		}
+		h4{
+			font-size: 1em;
+			min-height: 57px;
+			width: 100%;
+			top: -80;
+			margin-top: 10px;
+		}
+	.nav{
+		position: fixed;
+	}
+	.fa-angle-right{
+		font-size: 40px;
+	}
+	.middle{
+		margin-right: 0;
+		margin-left: 0;
+	}
 }
