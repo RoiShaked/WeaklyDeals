@@ -394,5 +394,7 @@ ul li#active a{
 		margin-left: 0;
 	}
 	body.Electronics{
+		background-repeat: no-repeat;
+		background-size: cover;
 		background-attachment: local;
 }
