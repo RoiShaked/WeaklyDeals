@@ -377,10 +377,10 @@ ul li#active a{
 
 
 		body.Electronics{
-
+			min-width: 100vw;
 		}
 		.products{
-			width: 100vw;
+			max-width: 100vw;
 		}
 		#content{
 			display: none;
@@ -391,7 +391,7 @@ ul li#active a{
 			margin-top: 50px;
 		}
 		#spe{
-			width: 100vw;
+			min-width: 100vw;
 		}
 		h1{
 			font-size: 2.5em;
