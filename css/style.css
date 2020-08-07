@@ -34,15 +34,25 @@ body.About{
 
 }
 body.Electronics{
-	background-image: url(../images/Ele.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+}
+
+	body.Electronics::before {
+		background-image: url(../images/Ele.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 
 }
 .products{
@@ -369,7 +379,6 @@ ul li#active a{
 
 
 		body.Electronics{
-			background-attachment: fixed;
 
 		}
 		.products{
