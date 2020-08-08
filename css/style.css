@@ -381,10 +381,24 @@ ul li#active a{
 		}
 		body.Electronics{
 			min-width: 100vw;
-			background-image: url(..images/11632.jpg);
+			background-image: url(..images/mobile.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		body.Electronics::before {
+			background-image: url(../images/mobile.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			content: '';
+			height: 100%;
+			left: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+
+	}
 		body.Gaming{
 			min-width: 100vw;
 		}
