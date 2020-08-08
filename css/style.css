@@ -184,9 +184,9 @@ i {
 
 }
 .nav {
+	position: fixed;
 	height: 100%;
 	width: 0;
-	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
@@ -373,38 +373,16 @@ ul li#active a{
 @media (max-width: 500px) and (min-width: 200px) {
 
 
-		body.Home::before {
+		body.Home{
 			min-width: 100vw;
-			background-image: url(../images/28.jpg);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-			content: '';
-			height: 100%;
-			left: 0;
-			position: fixed;
-			top: 0;
-			width: 100%;
-			z-index: -1;
 		}
-		body.About::before {
+		body.About{
 			min-width: 100vw;
-			background-image: url(../images/109.jpg);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-			content: '';
-			height: 100%;
-			left: 0;
-			position: fixed;
-			top: 0;
-			width: 100%;
-			z-index: -1;
+		}
+		body.Electronics{
+			min-width: 100vw;
 		}
 		body.Electronics::before {
-			min-width: 100vw;
 			background-image: url(../images/mobile.jpg);
 			background-position: center;
 			background-repeat: no-repeat;
