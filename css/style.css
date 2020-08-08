@@ -453,14 +453,40 @@ ul li#active a{
 		font-size: 30px;
 	}
 	.smenu{
-	  overflow: scroll;
+		position: absolute;
+	  overflow: hidden;
 	  transition: max-height 0.3s;
 	  max-height: 0;
 		background-color: rgba(62, 62, 62, 0.5);
+		padding-top: 20px;
+		width: 100vw;
+		height: 60px;
+		left: 0;
+
+	}
+	.smenu a{
+	  display: inline;
+	  color: white;
+	  font-size: 30px;
+		border-right: 1px solid white;
+	}
+	.smenu a:before{
+	  content: "";
+	  position: absolute;
+	  width: 6px;
+	  height: 100%;
+	  background: #FAFAFA;
+	  left: 0;
+	  top: 0;
+	  transition: 0.3s;
+	  opacity: 0;
 	}
 	.smenu #active:before{
 		opacity: 0;
 	}
+	.smenu a:hover:before{
+	  opacity: 1;
+}
 	.fa-angle-right::before{
 		display: none;
 		top: 0;
@@ -484,6 +510,7 @@ ul li#active a{
 		margin:0;
 	}
 	li{
+		left: 0;
 		width: 130px;
 	}
 	ul li{
