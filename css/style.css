@@ -381,6 +381,9 @@ ul li#active a{
 		}
 		body.Electronics{
 			min-width: 100vw;
+			background-image: url(..images/11632.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 		body.Gaming{
 			min-width: 100vw;
