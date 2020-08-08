@@ -368,22 +368,25 @@ ul li#active a{
 			width: 55%;
 			text-align: center;
 		}
-		#content{
-			display: none;
-		}
 
 }
 @media (max-width: 500px) and (min-width: 200px) {
 
 
+		body.Home{
+			min-width: 100vw;
+		}
+		body.About{
+			min-width: 100vw;
+		}
 		body.Electronics{
+			min-width: 100vw;
+		}
+		body.Gaming{
 			min-width: 100vw;
 		}
 		.products{
 			max-width: 100vw;
-		}
-		#content{
-			display: none;
 		}
 		#box{
 			height: 300px;
@@ -391,7 +394,14 @@ ul li#active a{
 			margin-top: 50px;
 		}
 		#spe{
+			margin-top: 100px;
+			position: absolute;
 			min-width: 100vw;
+			background-color: rgba(194, 188, 184, 0.7);
+			text-align: center;
+			padding: 10px 15px;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 		h1{
 			font-size: 2.5em;
@@ -411,16 +421,75 @@ ul li#active a{
 			top: -80;
 			margin-top: -5px;
 		}
+		script{
+}
 	.nav{
-		position: fixed;
+		position: absolute;
+		height: auto;
+		min-width: 100vw;
+		padding: 0;
+		float: left;
+		margin: 0;
+	}
+	.nav a{
+		font-size: 30px;
+	}
+	.smenu{
+	  overflow: scroll;
+	  transition: max-height 0.3s;
+	  max-height: 0;
+		background-color: rgba(62, 62, 62, 0.5);
+	}
+	.smenu #active:before{
+		opacity: 0;
+	}
+	.fa-angle-right::before{
+		display: none;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding: 20px 550px 0px;
+		color: #FFF;
+		z-index: 2;
+		transform: rotate(90deg);
 
 	}
-	.fa-angle-right{
-		font-size: 40px;
+	.fa-angle-left::before{
+		display: none;
+
 	}
 	.middle{
 		margin-right: 0;
 		margin-left: 0;
 	}
-
+	ul{
+		margin:0;
+	}
+	li{
+		width: 130px;
+	}
+	ul li{
+		float: left;
+		padding-right: 20px;
+	}
+	ul li a .btn{
+		display: none;
+	}
+	ul li #nf{
+		width: 160px;
+		margin:0;
+	}
+	.item{
+		margin:0;
+		border: 0;
+		overflow: hidden;
+	}
+	.itema{
+		margin:0;
+		border: 0;
+	  overflow: hidden;
+	}
+	#nf{
+		padding: 15px 15px;
+	}
 }
