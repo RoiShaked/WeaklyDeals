@@ -56,10 +56,36 @@ body.Electronics{
 
 }
 .products{
-	margin-top: 100px;
 	position: absolute;
+	margin-top: 100px;
 	width: 1100px;
 	top: 400px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#pc{
+	position: absolute;
+	margin-top: 1500px;
+	width: 1100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+h2#sec{
+	position: absolute;
+	margin-top: 1300px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#car{
+	position: absolute;
+	margin-top: 2500px;
+	width: 1100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+h2#thr{
+	position: absolute;
+	margin-top: 2300px;
 	left: 50%;
 	transform: translateX(-50%);
 }
