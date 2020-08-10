@@ -63,29 +63,30 @@ body.Electronics{
 	left: 50%;
 	transform: translateX(-50%);
 }
+h2#sec{
+	position: absolute;
+	margin-top: 800px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 #pc{
 	position: absolute;
-	margin-top: 1500px;
+	margin-top: 1000px;
 	width: 1100px;
 	left: 50%;
 	transform: translateX(-50%);
 }
-h2#sec{
+
+h2#thr{
 	position: absolute;
-	margin-top: 1300px;
+	margin-top: 1800px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 #car{
 	position: absolute;
-	margin-top: 2500px;
+	margin-top: 2000px;
 	width: 1100px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-h2#thr{
-	position: absolute;
-	margin-top: 2300px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -208,6 +209,9 @@ i {
 	height: 15px;
 	opacity: .7;
 
+}
+#mobile-only{
+	display: none;
 }
 .nav {
 	position: fixed;
@@ -426,7 +430,7 @@ ul li#active a{
 			min-width: 100vw;
 		}
 		.products{
-			max-width: 100vw;
+			max-width: 90vw;
 		}
 		#box{
 			height: 300px;
@@ -453,6 +457,28 @@ ul li#active a{
 			width: 80vw;
 			left: 50%;
 		}
+		h2#sec{
+			position: absolute;
+			top: 1100px;
+		}
+		#pc{
+			position: absolute;
+			top: 1100px;
+			left: 50%;
+			max-width: 90vw;
+			transform: translateX(-50%);
+		}
+		h2#thr{
+			position: absolute;
+			top: 2600px;
+		}
+		#car{
+			position: absolute;
+			top: 2600px;
+			left: 50%;
+			max-width: 90vw;
+			transform: translateX(-50%);
+		}
 		h4{
 			width: 70vw;
 			padding: 5px 2px;
@@ -461,54 +487,26 @@ ul li#active a{
 			top: -80;
 			margin-top: -5px;
 		}
-		script{
-}
-	.nav{
-		position: absolute;
-		top: 0;
-		height: auto;
-		min-width: 100vw;
-		padding: 0;
-		float: left;
-		margin: 0;
-	}
-	.nav a{
-		font-size: 30px;
-	}
-	.smenu{
-		position: absolute;
-	  overflow: hidden;
-	  transition: max-height 0.3s;
-	  max-height: 0;
-		background-color: rgba(62, 62, 62, 0.5);
-		padding-top: 20px;
-		width: 100vw;
-		height: 60px;
-		left: 0;
+		#mobile-only{
+			position: absolute;
+			padding: 0;
+			top: 0;
+			left: 0;
+			height: auto;
+			min-width: 100vw;
+			background-color: rgba(0, 0, 0, 0.2);
+			border-bottom: 5px solid rgba(0, 0, 0, 0.2);
 
-	}
-	.smenu a{
-	  display: inline;
-	  color: white;
-	  font-size: 30px;
-		border-right: 1px solid white;
-	}
-	.smenu a:before{
-	  content: "";
-	  position: absolute;
-	  width: 6px;
-	  height: 100%;
-	  background: #FAFAFA;
-	  left: 0;
-	  top: 0;
-	  transition: 0.3s;
-	  opacity: 0;
-	}
-	.smenu #active:before{
-		opacity: 0;
-	}
+		}
+		.mobile-smenu{
+			display: none;
+		}
+		#deals :hover .btn {
+			display: block;
+			position: absolute;
+		}
 	.smenu a:hover:before{
-	  opacity: 1;
+	  opacity: 0;
 }
 	.fa-angle-right::before{
 		display: none;
@@ -551,6 +549,18 @@ ul li#active a{
 		margin:0;
 		border: 0;
 		overflow: hidden;
+	}
+	.itema #nf:hover{
+	  background: none;
+		transition: .6s;
+	}
+	.item #nf:hover{
+	  background: none;
+		transition: .6s;
+	}
+	.itema .btn:hover{
+	  background: none;
+		transition: .6s;
 	}
 	.itema{
 		margin:0;
