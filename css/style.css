@@ -210,7 +210,7 @@ i {
 	opacity: .7;
 
 }
-#mobile-only{
+#mobile-menu{
 	display: none;
 }
 .nav {
@@ -386,6 +386,9 @@ ul{
 ul li#active a{
 	background: rgba(206, 197, 192, .8);
 }
+.menu-btn{
+	display: none;
+}
 @media (max-width: 800px) and (min-width: 400px){
 		#spe{
 			width: 120%;
@@ -428,6 +431,9 @@ ul li#active a{
 	}
 		body.Gaming{
 			min-width: 100vw;
+		}
+		#content{
+			display: none;
 		}
 		.products{
 			max-width: 90vw;
@@ -487,16 +493,75 @@ ul li#active a{
 			top: -80;
 			margin-top: -5px;
 		}
-		#mobile-only{
-			position: absolute;
+		#mobile-menu{
+			position: fixed;
 			padding: 0;
-			top: 0;
-			left: 0;
-			height: auto;
+			margin: 0;
+			clear: both;
+			max-height: 0;
 			min-width: 100vw;
-			background-color: rgba(0, 0, 0, 0.2);
-			border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+			transition:max-height .2s ease-out;
+			z-index: 3;
+			background: rgba(0,0,0,.2)
+		}
+		.menu-icon{
+			float: right;
+			cursor: pointer;
+			padding: 30px 20px;
+			position: relative;
 
+		}
+		.menu-icon .nav-icon{
+			background: #333;
+			display: block;
+			height: 3px;
+			width: 18px;
+			position: relative;
+			transition: background .2s ease-out;
+
+		}
+		.menu-icon .nav-icon:before{
+			background: #333;
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			transition: all .2s ease-out;
+			top: 6px;
+
+		}
+		.menu-icon .nav-icon::after{
+			background: #333;
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			transition: all .2s ease-out;
+			top: -6px;
+
+		}
+		.menu-btn{
+			display: none;
+		}
+
+		.menu-btn:checked ~ .menu{
+			max-height: 240px;
+		}
+		li{
+			left: 0;
+			width: auto;
+		}
+		ul{
+			margin: 0;
+		}
+		ul li{
+			float: left;
+			padding-right: 20px;
+		}
+		ul li a .btn{
+			display: none;
 		}
 		.mobile-smenu{
 			display: none;
@@ -527,24 +592,6 @@ ul li#active a{
 		margin-right: 0;
 		margin-left: 0;
 	}
-	ul{
-		margin:0;
-	}
-	li{
-		left: 0;
-		width: 130px;
-	}
-	ul li{
-		float: left;
-		padding-right: 20px;
-	}
-	ul li a .btn{
-		display: none;
-	}
-	ul li #nf{
-		width: 160px;
-		margin:0;
-	}
 	.item{
 		margin:0;
 		border: 0;
@@ -568,6 +615,6 @@ ul li#active a{
 	  overflow: hidden;
 	}
 	#nf{
-		padding: 15px 15px;
+		padding: 15px 5px;
 	}
 }
