@@ -418,6 +418,75 @@ ul li#active a{
 			min-width: 100vw;
 			max-width: 100vw;
 		}
+
+		.nav {
+			position: absolute;
+			height: auto;
+			z-index: 3;
+			width: 100vw;
+			padding-top: 0;
+			transition: 0.9s;
+		}
+		.nav a{
+			padding-top: 0;
+		}
+		.nav .close{
+			display: none;
+		}
+		.nav a:hover {
+			color: none;
+			transition: none;
+		}
+		ul {
+			margin: 0;
+		}
+		li:not(.smenu){
+			display: inline;
+		}
+		#nf{
+			float: left;
+		}
+		.slide a {
+			display: none;
+		}
+		.close .fa-angle-left{
+			display: none;
+		}
+		.smenu{
+			display: none;
+			position: relative;
+			top: 80px;
+			left: -100px;
+		  transition: max-height 0.3s;
+		  max-height: 0;
+			background-color: rgba(62, 62, 62, 0.5);
+		}
+		.smenu a{
+			float: left;
+		  display: block;
+		  padding: 16px 20px;
+		  color: white;
+		  font-size: 20px;
+		  margin: 0;
+		  position: relative;
+		}
+		.smenu a:before{
+		  content: "";
+		  position: absolute;
+		  width: 6px;
+		  height: 100%;
+		  background: #FAFAFA;
+		  left: 0;
+		  top: 0;
+		  transition: 0.3s;
+		  opacity: 0;
+		}
+		.smenu #active:before{
+		  display: none;
+		}
+		#content{
+			padding: 0;
+		}
 		.products{
 			max-width: 90vw;
 		}
