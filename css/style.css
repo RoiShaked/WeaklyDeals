@@ -190,26 +190,6 @@ i {
 	margin-right: 15px;
 
 }
-
-#header{
-	position: absolute;
-	width:100%;
-	height:auto;
-	text-align: center;
-	float: left;
-
-
-}
-.counter{
-	position: fixed;
-	margin: 5px;
-	bottom: 0;
-	right: 0;
-	width: 30px;
-	height: 15px;
-	opacity: .7;
-
-}
 .nav {
 	position: fixed;
 	height: 100%;
@@ -325,6 +305,7 @@ ul{
 }
 .smenu{
   overflow: hidden;
+	display: block;
   transition: max-height 0.3s;
   max-height: 0;
 	background-color: rgba(62, 62, 62, 0.5);
@@ -387,19 +368,13 @@ ul li#active a{
 }
 @media (max-width: 500px) and (min-width: 200px) {
 
+	body{
+		position:fixed;
+		width: 100%;
 
-		body.Home{
-			min-width: 100vw;
-			max-width: 100vw;
-		}
-		body.About{
-			min-width: 100vw;
-			max-width: 100vw;
-		}
-		body.Electronics{
-			min-width: 100vw;
-			max-width: 100vw;
-		}
+
+	}
+
 		body.Electronics::before {
 			background-image: url(../images/mobile.jpg);
 			background-position: center;
@@ -408,24 +383,27 @@ ul li#active a{
 			content: '';
 			height: 100%;
 			left: 0;
-			position: fixed;
 			top: 0;
 			width: 100%;
 			z-index: -1;
+			overflow-y: visible;
 
-	}
-		body.Gaming{
-			min-width: 100vw;
-			max-width: 100vw;
-		}
+}
 
-		.nav {
+		.nav{
 			position: absolute;
 			height: auto;
 			z-index: 3;
 			width: 100vw;
 			padding-top: 0;
 			transition: 0.9s;
+			border-radius: 0 0 40px 40px;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			opacity: .8;
+			overflow-x: hidden;
+			text-align: center;
 		}
 		.nav a{
 			padding-top: 0;
@@ -443,8 +421,17 @@ ul li#active a{
 		li:not(.smenu){
 			display: inline;
 		}
-		#nf{
+		.btn{
+			padding: 0;
+			right: 0;
+		}
+		 #nf{
 			float: left;
+			width: 155px;
+	    padding: 16px 0px;
+		}
+		.left{
+			left: 0;
 		}
 		.slide a {
 			display: none;
@@ -486,6 +473,11 @@ ul li#active a{
 		}
 		#content{
 			padding: 0;
+		}
+		.centereddiv{
+			background-color: rgba(252, 252, 252, 0.8);
+			margin-top: 100px;
+			position: absolute;
 		}
 		.products{
 			max-width: 90vw;
@@ -550,5 +542,12 @@ ul li#active a{
 		.middle{
 		margin-right: 0;
 		margin-left: 0;
+	}
+	.About #Commingsoon{
+		color: #fff;
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 50px;
+		width: 100%;
+		text-align: center;
 	}
 	}
