@@ -270,7 +270,7 @@ i {
 	top: 50%;
 	transform: translate(-50%,-50%);
 }
-#Commingsoon{
+.Gaming #Commingsoon{
 	position: absolute;
 	color: #fff;
 	width: 100%;
@@ -532,7 +532,7 @@ ul li#active a{
 		}
 		h1{
 			font-size: 2.5em;
-	    
+
 		}
 		h2{
 			font-size: 1.4em;
