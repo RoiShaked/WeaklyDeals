@@ -33,6 +33,27 @@ body.About{
 	overflow-x: hidden;
 
 }
+body.Gaming{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+
+}
+body.Gaming::before{
+	background-image: url(../images/1329.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: fixed;
+	content: '';
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
 body.Electronics{
 	font-family: sans-serif;
 	margin: 0;
@@ -127,12 +148,12 @@ img{
 }
 h1{
 	color: #fff;
-	font-family: 'Luckiest Guy', serif;
+	font-family: 'Lobster', cursive;
   font-size: 50px;
-	-webkit-text-stroke: 1px #5E5350;
 	letter-spacing: 3px;
 	height: auto;
-	box-shadow: #EAEAEA 0px 0px 10px 10px;
+	box-shadow: #EAEAEA 0px 0px 2px 2px;
+  text-shadow: 4px 6px 5px black;
 
 }
 h2{
@@ -242,6 +263,7 @@ i {
 	margin-right: auto;
 	position: absolute;
 	color: #fff;
+	text-shadow: none;
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 70px;
 	left: 50%;
@@ -249,10 +271,10 @@ i {
 	transform: translate(-50%,-50%);
 }
 #Commingsoon{
-	margin-left: auto;
-	margin-right: auto;
 	position: absolute;
-	color: #000;
+	color: #fff;
+	width: 100%;
+  text-shadow: 5px 8px 3px #13123C;
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 70px;
 	left: 50%;
@@ -364,17 +386,13 @@ ul{
 ul li#active a{
 	background: rgba(206, 197, 192, .8);
 }
-@media (max-width: 800px) and (min-width: 400px){
-}
+
 @media (max-width: 500px) and (min-width: 200px) {
 
-	body{
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		max-height: 100vh;
-		width: 100vw;
-		overflow-y: scroll;
+		body.Gaming{
+			position: fixed;
+			width: 100vw;
+			overflow-y: scroll;
 
 
 	}
@@ -393,7 +411,6 @@ ul li#active a{
 			overflow-y: visible;
 
 }
-
 		.nav{
 			position: absolute;
 			height: auto;
@@ -408,9 +425,11 @@ ul li#active a{
 			opacity: .8;
 			overflow-x: hidden;
 			text-align: center;
+			opacity: .9;
 		}
 		.nav a{
 			padding-top: 0;
+			float: left;
 		}
 		.nav .close{
 
@@ -419,35 +438,26 @@ ul li#active a{
 			color: none;
 			transition: none;
 		}
+		.margin{
+			margin-left: auto;
+			margin-right: auto;
+
+		}
 		ul {
 			margin: 0;
 		}
 		li:not(.smenu){
 			display: inline;
 		}
-		.btn{
-			padding: 0;
-			right: 0;
-		}
-		 #nf{
-			float: left;
-			width: 158.5;
-	    padding: 16px 0px;
-		}
-		.left{
-			left: 0;
-		}
 		.slide a {
 				display: none;
 		}
-		.nav .close i{
+		.close i{
 			transform: rotate(90deg);
 			z-index: 4;
 			position: relative;
 			right: 10px;
 			top: 70px;
-}
-
 		}
 		.smenu{
 		transition: max-height 0.3s;
@@ -481,12 +491,15 @@ ul li#active a{
 		.smenu #active:before{
 		  display: none;
 		}
+		#desktop{
+			display: none;
+		}
 		#content{
 			padding: 0;
 		}
-		.text{
-			font-size: 25px;
-
+		.mid{
+			margin-left: 10px;
+    	margin-right: 10px;
 		}
 		.text2{
 			font-size: 18px;
@@ -508,14 +521,18 @@ ul li#active a{
 			margin-top: 100px;
 			position: absolute;
 			min-width: 100vw;
-			background-color: rgba(194, 188, 184, 0.7);
+			background-color: rgba(0,0,0, 0.3);
 			text-align: center;
 			padding: 10px 15px;
 			left: 50%;
 			transform: translateX(-50%);
 		}
+		ul li#active a{
+			background: none;
+		}
 		h1{
 			font-size: 2.5em;
+	    
 		}
 		h2{
 			font-size: 1.4em;
@@ -559,12 +576,19 @@ ul li#active a{
 		.middle{
 		margin-right: 0;
 		margin-left: 0;
-	}
+		}
 	.About #Commingsoon{
 		color: #fff;
 		font-family: 'Fjalla One', sans-serif;
 		font-size: 50px;
 		width: 100%;
 		text-align: center;
+	}
+	.Gaming #Commingsoon{
+		position: fixed;
+		font-size: 50px;
+		left: 50vw;
+    top: 50vh;
+    transform: translateX(-25%);
 	}
 	}
