@@ -491,9 +491,6 @@ ul li#active a{
 		.smenu #active:before{
 		  display: none;
 		}
-		#desktop{
-			display: none;
-		}
 		#content{
 			padding: 0;
 		}
