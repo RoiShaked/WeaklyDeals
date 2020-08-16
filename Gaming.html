@@ -17,6 +17,9 @@
 				document.getElementById('menu').style.width = '0';
 				document.getElementById('content').style.marginLeft = '0';
 			}
+			function closeSlideMenu(){
+				document.getElementById('smenu').style.height = '0';
+			}
 		</script>
 	</head>
 	<header>
@@ -30,6 +33,9 @@
 			<a hidden href="https://www.freepik.com/free-photos-vectors/background">Background photo created by yingyang - www.freepik.com</a>
 			<div id="menu" class="nav">
 				<a href="#" class="close" onclick="closeSlideMenu()">
+					<i class="fas fa-angle-left"></i>
+				</a>
+				<a href="#" class="mobile-close" onclick="closeSlideMenu()">
 					<i class="fas fa-angle-left"></i>
 				</a>
 				<ul>
