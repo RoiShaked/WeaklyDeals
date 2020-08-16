@@ -237,6 +237,11 @@ i {
 	top: 0;
 	right: 0px;
 }
+.nav .mobile-close {
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
 .fa-angle-left{
 	font-size: 40px;
 }
@@ -408,6 +413,9 @@ ul li#active a{
 			overflow-y: visible;
 
 }
+		.nav .close {
+			display: none;
+		}
 		.nav{
 			position: absolute;
 			height: auto;
@@ -428,7 +436,7 @@ ul li#active a{
 			padding-top: 0;
 			float: left;
 		}
-		.nav .close{
+		.close{
 
 		}
 		.nav a:hover {
@@ -450,6 +458,13 @@ ul li#active a{
 				display: none;
 		}
 		.close i{
+			transform: rotate(90deg);
+			z-index: 4;
+			position: relative;
+			right: 10px;
+			top: 70px;
+		}
+		.mobile-close i{
 			transform: rotate(90deg);
 			z-index: 4;
 			position: relative;
