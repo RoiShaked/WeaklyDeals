@@ -259,8 +259,6 @@ i {
 	width: 100%;
 }
 .About #Commingsoon{
-	margin-left: auto;
-	margin-right: auto;
 	position: absolute;
 	color: #fff;
 	text-shadow: none;
@@ -273,7 +271,6 @@ i {
 .Gaming #Commingsoon{
 	position: absolute;
 	color: #fff;
-	width: 100%;
   text-shadow: 5px 8px 3px #13123C;
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 70px;
