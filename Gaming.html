@@ -17,8 +17,8 @@
 				document.getElementById('menu').style.width = '0';
 				document.getElementById('content').style.marginLeft = '0';
 			}
-			function closeSlideMenu(){
-				document.getElementById('smenu').style.height = '0';
+			function closeSmenu(){
+				document.getElementById('mobile-smenu').style.height = '0';
 			}
 		</script>
 	</head>
@@ -35,7 +35,7 @@
 				<a href="#" class="close" onclick="closeSlideMenu()">
 					<i class="fas fa-angle-left"></i>
 				</a>
-				<a href="#" class="mobile-close" onclick="closeSlideMenu()">
+				<a href="#" class="mobile-close" onclick="closeSmenu()">
 					<i class="fas fa-angle-left"></i>
 				</a>
 				<ul>
@@ -43,10 +43,13 @@
 				<li class="item"  id='home'><a href="index.html" id="nf"><i class="fa fa-home"></i>Home</a></li>
 				<li class="itema" id='about'><a href="about.html" class="mid" id="nf"><i class="fa fa-question"></i>About</a></li>
 				<li class="itema" id='deals'><a href="#deals" id="nf" class="btn"><i class="fa fa-search"></i>Deals</a>
-
 				<div class="smenu">
 				<a href="Electronics.html"><i class="fa fa-tools" style="font-size:20px;"></i>Electronics</a>
 				<a id='active' href="Gaming.html"><i class="fa fa-gamepad" style="font-size:20px;"></i>Gaming</a>
+				</div>
+				<div class="mobile-smenu">
+				<a href="Electronics.html"><i class="fa fa-tools" style="font-size:20px;" aria-hidden="true"></i>Electronics</a>
+				<a href="Gaming.html"><i class="fa fa-gamepad" style="font-size:20px;" aria-hidden="true"></i>Gaming</a>
 				</div>
 				</li>
 				</ul>

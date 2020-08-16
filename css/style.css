@@ -178,7 +178,7 @@ h4{
 	position: absolute;
 	color: black;
 	width: 100%;
-	top: -52;
+	top: -52px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
@@ -211,6 +211,9 @@ i {
 	margin-right: 15px;
 
 }
+.mobile-smenu{
+	display: none;
+}
 .nav {
 	position: fixed;
 	height: 100%;
@@ -238,17 +241,20 @@ i {
 	right: 0px;
 }
 .nav .mobile-close {
+	display: none;
 	position: absolute;
 	top: 0;
-	right: 0px;
+	right: 0;
 }
 .fa-angle-left{
 	font-size: 40px;
+	z-index: 4;
 }
 .fa-angle-right{
 	font-size: 40px;
 	position: fixed;
 	color: #000;
+	z-index: 4;
 }
 .About .fa-angle-right{
 	color: #fff;
@@ -398,7 +404,9 @@ ul li#active a{
 
 
 	}
-
+		body.Electronics{
+			width: 100vw;
+		}
 		body.Electronics::before {
 			background-image: url(../images/mobile.jpg);
 			background-position: center;
@@ -412,9 +420,13 @@ ul li#active a{
 			z-index: -1;
 			overflow-y: visible;
 
+
 }
 		.nav .close {
 			display: none;
+		}
+		.nav .mobile-close {
+			display: block;
 		}
 		.nav{
 			position: absolute;
@@ -450,6 +462,14 @@ ul li#active a{
 		}
 		ul {
 			margin: 0;
+			display: flex;
+			align-items: stretch;
+		}
+		ul li a:not(.mid .smenu){
+			margin-left: auto;
+			margin-right: auto;
+
+
 		}
 		li:not(.smenu){
 			display: inline;
@@ -476,7 +496,7 @@ ul li#active a{
     max-height: 0;
     left: 0;
 		top: 0;
-		width: 100%;
+		width: 100vw;
     position: relative;
     background-color: rgba(62, 62, 62, 0.5)
 		}
@@ -493,7 +513,7 @@ ul li#active a{
 		  content: "";
 		  position: absolute;
 		  width: 6px;
-		  height: 100%;
+		  height: 100vw;
 		  background: #FAFAFA;
 		  left: 0;
 		  top: 0;
@@ -509,6 +529,16 @@ ul li#active a{
 		.mid{
 			margin-left: 10px;
     	margin-right: 10px;
+			width: auto;
+			padding: 0;
+		}
+		#nf{
+		  padding: 16px 20px;
+		  position: relative;
+		}
+		#nf.btn{
+			position: absolute;
+			right: 0;
 		}
 		.text2{
 			font-size: 18px;
@@ -523,7 +553,7 @@ ul li#active a{
 		}
 		#box{
 			height: 300px;
-			width: 100%;;
+			width: 100%;
 			margin-top: 50px;
 		}
 		#spe{
@@ -579,7 +609,7 @@ ul li#active a{
 			padding: 5px 2px;
 			font-size: .9em;
 			max-height: 70px;
-			top: -80;
+			top: -80px;
 			margin-top: -5px;
 		}
 		.middle{

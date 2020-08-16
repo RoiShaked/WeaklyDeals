@@ -17,8 +17,8 @@
 				document.getElementById('menu').style.width = '0';
 				document.getElementById('content').style.marginLeft = '0';
 			}
-			function closeSlideMenu(){
-				document.getElementById('smenu').style.height = '0';
+			function closeSmenu(){
+				document.getElementById('mobile-smenu').style.height = '0';
 			}
 		</script>
 	</head>
@@ -36,7 +36,7 @@
 				<a href="#" class="close" onclick="closeSlideMenu()">
 					<i class="fas fa-angle-left"></i>
 				</a>
-				<a href="#" class="mobile-close" onclick="closeSlideMenu()">
+				<a href="#" class="mobile-close" onclick="closeSmenu()">
 					<i class="fas fa-angle-left"></i>
 				</a>
 			<ul>
@@ -47,6 +47,10 @@
 			<div class="smenu">
 			<a id='active' href="Electronics.html"><i class="fa fa-tools" style="font-size:20px;"></i>Technology</a>
 			<a href="Gaming.html"><i class="fa fa-gamepad" style="font-size:20px;"></i>Gaming</a>
+			</div>
+			<div class="mobile-smenu">
+			<a href="Electronics.html"><i class="fa fa-tools" style="font-size:20px;" aria-hidden="true"></i>Electronics</a>
+			<a href="Gaming.html"><i class="fa fa-gamepad" style="font-size:20px;" aria-hidden="true"></i>Gaming</a>
 			</div>
 			</li>
 			</ul>
