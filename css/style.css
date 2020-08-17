@@ -447,7 +447,7 @@ ul li#active a{
 		}
 		.nav a{
 			padding-top: 0;
-			float: left;
+	    font-size: 20px;
 		}
 		.close{
 
@@ -456,10 +456,13 @@ ul li#active a{
 			color: none;
 			transition: none;
 		}
+		.itema{
+			border: none;
+		}
 		.margin{
 			margin-left: auto;
 			margin-right: auto;
-
+			text-align-last: justify;
 		}
 		ul {
 			margin: 0;
@@ -528,8 +531,6 @@ ul li#active a{
 			padding: 0;
 		}
 		.mid{
-			margin-left: 10px;
-    	margin-right: 10px;
 			width: auto;
 			padding: 0;
 		}
@@ -537,8 +538,10 @@ ul li#active a{
 		  padding: 16px 20px;
 			text-align: center;
 		  position: relative;
+			margin: 0;
+			display: inline-block;
 		}
-		#nf.btn{
+		#nf.btn
 
 		}
 		.text2{
@@ -559,13 +562,15 @@ ul li#active a{
 		}
 		#spe{
 			margin-top: 100px;
-			position: absolute;
-			min-width: 100vw;
-			background-color: rgba(0,0,0, 0.3);
-			text-align: center;
-			padding: 10px 15px;
-			left: 50%;
-			transform: translateX(-50%);
+	    position: absolute;
+	    width: 50vw;
+	    background-color: rgba(0,0,0, 0.3);
+	    text-align: center;
+	    padding: 10px 15px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    border-radius: 10px;
+			}
 		}
 		ul li#active a{
 			background: none;
