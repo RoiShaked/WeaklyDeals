@@ -430,6 +430,7 @@ ul li#active a{
 		}
 		.nav{
 			position: absolute;
+			overflow: hidden;
 			height: auto;
 			z-index: 3;
 			width: 100vw;
@@ -534,11 +535,11 @@ ul li#active a{
 		}
 		#nf{
 		  padding: 16px 20px;
+			text-align: center;
 		  position: relative;
 		}
 		#nf.btn{
-			position: absolute;
-			right: 0;
+
 		}
 		.text2{
 			font-size: 18px;
