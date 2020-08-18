@@ -207,7 +207,6 @@ i {
 .fa-home, .fa-question, .fa-search{
 	text-align: center;
 	font-size: 30px;
-	width: 30px;
 	margin-right: 15px;
 
 }
@@ -394,7 +393,6 @@ ul{
 ul li#active a{
 	background: rgba(206, 197, 192, .8);
 }
-
 @media (max-width: 500px) and (min-width: 200px) {
 
 		body.Gaming{
@@ -447,7 +445,6 @@ ul li#active a{
 		}
 		.nav a{
 			padding-top: 0;
-	    font-size: 20px;
 		}
 		.close{
 
