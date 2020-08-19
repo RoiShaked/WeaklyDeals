@@ -394,23 +394,7 @@ ul{
 ul li#active a{
 	background: rgba(206, 197, 192, .8);
 }
-@media (max-width: 460px) and (min-width: 100px) {
-		.nav a{
-		padding-top: 0;
-		font-size: 20px;
-		}
-		#nf{
-			padding: 16px 10px;
-			text-align: center;
-			position: relative;
-			margin: 0;
-			display: inline-block;
-		}
-		.fa-home, .fa-question, .fa-search{
-			font-size: 20px;
-		}
-}
-@media (max-width: 600px) and (min-width: 300px) {
+@media only screen and (max-width: 700px) and (min-width: 300px) {
 
 		body.Gaming{
 			position: fixed;
@@ -557,7 +541,7 @@ ul li#active a{
 			padding: 0;
 		}
 		#nf{
-		  padding: 16px 20px;
+		  padding: 16px 10px;
 			text-align: center;
 		  position: relative;
 			margin: 0;
@@ -655,3 +639,67 @@ ul li#active a{
     transform: translateX(-25%);
 	}
 	}
+	@media (max-width: 400px){
+		.nav a{
+			padding-top: 0;
+			font-size: 20px;
+		}
+		#nf{
+			padding: 16px 10px;
+			text-align: center;
+			position: relative;
+			margin: 0;
+			display: inline-block;
+		}
+		.fa-home, .fa-question, .fa-search{
+			font-size: 20px;
+		}
+		.fa-angle-left{
+			font-size: 35px;
+		}
+		.smenu a:not(.mobile-close) {
+    float: left;
+    display: block;
+    padding: 16px 10px;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+
+	}
+	i{
+		margin-right: 10px;
+	}
+}
+	@media only screen and (max-width: 360px){
+		.nav a{
+			padding-top: 0;
+			font-size: 20px;
+		}
+		#nf{
+			padding: 16px 0px;
+			text-align: center;
+			position: relative;
+			margin: 0;
+			display: inline-block;
+		}
+		.fa-home, .fa-question, .fa-search{
+			font-size: 20px;
+		}
+		.fa-angle-left{
+			font-size: 35px;
+		}
+		.smenu a:not(.mobile-close) {
+    float: left;
+    display: block;
+    padding: 16px 5px;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+
+	}
+	i{
+		margin-right: 5px;
+	}
+}
