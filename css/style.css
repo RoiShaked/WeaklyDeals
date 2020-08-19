@@ -393,7 +393,23 @@ ul{
 ul li#active a{
 	background: rgba(206, 197, 192, .8);
 }
-@media (max-width: 500px) and (min-width: 200px) {
+@media (max-width: 460px) and (min-width: 100px) {
+		.nav a{
+		padding-top: 0;
+		font-size: 20px;
+		}
+		#nf{
+			padding: 16px 20px;
+			text-align: center;
+			position: relative;
+			margin: 0;
+			display: inline-block;
+		}
+		.fa-home, .fa-question, .fa-search{
+			font-size: 20px;
+		}
+}
+@media (max-width: 600px) and (min-width: 300px) {
 
 		body.Gaming{
 			position: fixed;
@@ -425,6 +441,8 @@ ul li#active a{
 		}
 		.nav .mobile-close {
 			display: block;
+	    margin: 0;
+	    transform: rotate(90deg);
 		}
 		.nav{
 			position: absolute;
@@ -485,7 +503,7 @@ ul li#active a{
 			right: 10px;
 			top: 70px;
 		}
-		.mobile-close i{
+		.semnu .mobile-close i{
 			transform: rotate(90deg);
 			z-index: 4;
 			position: relative;
@@ -520,6 +538,7 @@ ul li#active a{
 		  top: 0;
 		  transition: 0.3s;
 		  opacity: 0;
+			overflow: hidden;
 		}
 		.smenu #active:before{
 		  display: none;
@@ -537,9 +556,6 @@ ul li#active a{
 		  position: relative;
 			margin: 0;
 			display: inline-block;
-		}
-		#nf.btn{
-
 		}
 		.text2{
 			font-size: 18px;
