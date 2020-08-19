@@ -352,7 +352,6 @@ ul{
 .smenu a:before{
   content: "";
   position: absolute;
-  width: 6px;
   height: 100%;
   background: #FAFAFA;
   left: 0;
@@ -401,7 +400,7 @@ ul li#active a{
 		font-size: 20px;
 		}
 		#nf{
-			padding: 16px 20px;
+			padding: 16px 10px;
 			text-align: center;
 			position: relative;
 			margin: 0;
@@ -444,7 +443,9 @@ ul li#active a{
 		.nav .mobile-close {
 			display: block;
 	    margin: 0;
-	    transform: rotate(90deg);
+			right: 0;
+			top:  calc(50% - 20px);
+			width: auto;
 		}
 		.nav{
 			position: absolute;
@@ -499,14 +500,12 @@ ul li#active a{
 				display: none;
 		}
 		.close i{
-			transform: rotate(90deg);
 			z-index: 4;
 			position: relative;
 			right: 10px;
 			top: 70px;
 		}
 		.semnu .mobile-close i{
-			transform: rotate(90deg);
 			z-index: 4;
 			position: relative;
 			right: 10px;
@@ -521,7 +520,7 @@ ul li#active a{
     position: relative;
     background-color: rgba(62, 62, 62, 0.5)
 		}
-		.smenu a{
+		.smenu a:not(.mobile-close){
 			float: left;
 		  display: block;
 		  padding: 16px 20px;
@@ -530,10 +529,8 @@ ul li#active a{
 		  margin: 0;
 		  position: relative;
 		}
-		.smenu a:before{
-		  content: "";
+		.smenu a:before:not(.mobile-close){
 		  position: absolute;
-		  width: 6px;
 		  height: 100vw;
 		  background: #FAFAFA;
 		  left: 0;
@@ -544,6 +541,13 @@ ul li#active a{
 		}
 		.smenu #active:before{
 		  display: none;
+		}
+		.smenu .fa-angle-left{
+			position: absolute;
+			width: auto;
+			right: 20px;
+			margin: 0;
+
 		}
 		#content{
 			padding: 0;
