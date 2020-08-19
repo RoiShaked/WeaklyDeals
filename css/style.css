@@ -242,9 +242,10 @@ i {
 }
 .nav .mobile-close {
 	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
 }
 .fa-angle-left{
 	font-size: 40px;
