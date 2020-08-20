@@ -433,7 +433,7 @@ ul li#active a{
 			width: auto;
 		}
 		.nav{
-			position: absolute;
+			position: fixed;
 			overflow: hidden;
 			height: auto;
 			z-index: 3;
