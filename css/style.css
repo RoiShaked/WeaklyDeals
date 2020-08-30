@@ -557,6 +557,11 @@ ul li#active a{
 			background-color: rgba(252, 252, 252, 0.8);
 			margin-top: 100px;
 			position: absolute;
+			width: 70vw;
+		}
+		.text{
+			width: max-content;
+			font-size: 30px;
 		}
 		.products{
 			max-width: 90vw;
@@ -570,7 +575,7 @@ ul li#active a{
 		#spe{
 			margin-top: 100px;
 	    position: absolute;
-	    width: 50vw;
+	    width: 60vw;
 	    background-color: rgba(0,0,0, 0.3);
 	    text-align: center;
 	    padding: 10px 15px;
@@ -679,8 +684,42 @@ ul li#active a{
 	h1{
 		font-size: ;
 	}
+	.nav{
+		position: fixed;
+		overflow: hidden;
+		height: auto;
+		z-index: 3;
+		width: 100vw;
+		padding-top: 0;
+		transition: 0.9s;
+		border-radius: 0 0 30px 30px;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		opacity: .8;
+		overflow-x: hidden;
+		text-align: center;
+		opacity: .9;
+	}
 }
 	@media only screen and (max-width: 360px){
+		.nav{
+			position: fixed;
+			overflow: hidden;
+			height: auto;
+			z-index: 3;
+			width: 100vw;
+			padding-top: 0;
+			transition: 0.9s;
+			border-radius: 0 0 30px 30px;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			opacity: .8;
+			overflow-x: hidden;
+			text-align: center;
+			opacity: .9;
+		}
 		.nav a{
 			padding-top: 0;
 			font-size: 20px;
