@@ -188,14 +188,11 @@ h4{
 	border-radius: 10px;
 	min-height: 42px;
 	box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
-	pointer-events: none;
+	pointer-events: visibleFill;
 
 
 }
 #padd{
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
 	width: 90%;
 	height: 90%;
 }
