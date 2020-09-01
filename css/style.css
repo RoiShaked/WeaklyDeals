@@ -118,7 +118,7 @@ h2#thr{
 	box-sizing: border-box;
 	float: left;
 	margin-bottom: 100px;
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(125, 125, 125, .3);
 	border-radius: 10px;
 	box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
 
