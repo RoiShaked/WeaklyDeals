@@ -84,6 +84,25 @@ body.Electronics{
 	left: 50%;
 	transform: translateX(-50%);
 }
+.container{
+	position: relative;
+	width: 1200px;
+	height: auto;
+	margin: 240px auto;
+	top: 100px;
+}
+.box{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	float: left;
+	margin: 15px;
+	box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
+	background: #ffffff59;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 20px;
+}
 h2#sec{
 	position: absolute;
 	margin-top: 800px;
