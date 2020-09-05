@@ -76,71 +76,45 @@ body.Electronics{
     z-index: -1;
 
 }
-.products{
-	position: absolute;
-	margin-top: 100px;
-	width: 1100px;
-	top: 400px;
-	left: 50%;
-	transform: translateX(-50%);
-}
 .container{
 	position: relative;
 	width: 1200px;
 	height: auto;
-	margin: 240px auto;
-	top: 100px;
+	margin: 200px auto;
+}
+.container .cell{
+	margin-bottom: 100px;
+	clear: both;
+	display: flow-root;
+}
+.container .pc{
+	margin-bottom: 100px;
+	clear: both;
+	display: flow-root;
+}
+.container .gad {
+	margin-bottom: 100px;
+	clear: both;
+	display: flow-root;
+}
+.container h2{
+	width: fit-content;
+	position: relative;
+	margin: 0;
+	margin-bottom: 30px;
+	clear: both;
 }
 .box{
 	position: relative;
-	width: calc(400px - 30px);
+	width: calc(400px - 60px);
 	height: calc(300px - 30px);
 	float: left;
-	margin: 15px;
+	margin: 30px;
 	box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
 	background: #ffffff59;
 	box-sizing: border-box;
 	overflow: hidden;
 	border-radius: 20px;
-}
-h2#sec{
-	position: absolute;
-	margin-top: 800px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-#pc{
-	position: absolute;
-	margin-top: 1000px;
-	width: 1100px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-h2#thr{
-	position: absolute;
-	margin-top: 1800px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-#car{
-	position: absolute;
-	margin-top: 2000px;
-	width: 1100px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-#box{
-	position: relative;
-	width: 300px;
-	height: 250px;
-	box-sizing: border-box;
-	float: left;
-	margin-bottom: 100px;
-	background-color: rgba(125, 125, 125, .3);
-	border-radius: 10px;
-	box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
-
 }
 img{
 	position: absolute;
@@ -151,12 +125,8 @@ img{
   height: 100%;
 
 }
-.middle{
-	margin-right: 100px;
-	margin-left: 100px;
-}
 #spe{
-	position: absolute;
+	position: fixed;
 	top: 50px;
 	background-color: rgba(194, 188, 184, 0.7);
 	text-align: center;
@@ -192,24 +162,31 @@ h2{
 
 }
 h4{
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility .3s, opacity 0.2s linear;
 	font-family: 'Fjalla One', sans-serif;
-	font-size: 17px;
-	font-weight: 300;
-	letter-spacing: 1px;
-	position: absolute;
-	color: black;
-	width: 100%;
-	top: -52px;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	background-color: rgba(255,255,255,.8);
-	border-radius: 10px;
-	min-height: 42px;
-	box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  position: relative;
+  margin-bottom: 10px;
+  color: black;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 10px;
+  min-height: 42px;
+  box-shadow: 5px 10px 5px rgba(0,0,0, 0.5);
+	}
+	.container .box:hover h4{
+		opacity: 1;
+		visibility: visible;
 
 
-}
+	}
 #padd{
 	width: 90%;
 	height: 90%;
@@ -580,14 +557,15 @@ ul li#active a{
 		.text{
 			font-size: 30px;
 		}
-		.products{
-			max-width: 90vw;
+		.container{
+			width: 90vw;
+			top: 100px;
 		}
-		#box{
-			height: 300px;
-			width: 100%;
-			margin-top: 50px;
-			background-color: rgba(125, 125, 125, .3);
+		.container .box{
+			width: 300px;
+  	  height: 250px;
+ 			margin: 30px auto;
+			float: none;
 		}
 		#spe{
 			margin-top: 100px;
@@ -614,40 +592,14 @@ ul li#active a{
 			left: 50%;
 			text-align: center;
 		}
-		h2#sec{
-			position: absolute;
-			margin-top: 2700px;
-		}
-		#pc{
-			position: absolute;
-			margin-top: 2850px;
-			left: 50%;
-			max-width: 90vw;
-			transform: translateX(-50%);
-		}
-		h2#thr{
-			position: absolute;
-  	  margin-top: 5600px;
-		}
-		#car{
-			position: absolute;
-	    margin-top: 5750px;
-	    left: 50%;
-	    max-width: 90vw;
-	    transform: translateX(-50%);
-		}
 		h4{
-			width: 70vw;
+			visibility: visible;
+			opacity: 1;
 			text-align: center;
 			padding: 5px 2px;
 			font-size: .9em;
 			max-height: 70px;
-			top: -80px;
-			margin-top: -5px;
-		}
-		.middle{
-		margin-right: 0;
-		margin-left: 0;
+			bottom: -80%;
 		}
 	.About #Commingsoon{
 		color: #fff;
@@ -717,6 +669,9 @@ ul li#active a{
 		overflow-x: hidden;
 		text-align: center;
 		opacity: .9;
+	}
+	.container .box{
+    width: calc(100% - 50px);
 	}
 }
 	@media only screen and (max-width: 360px){
