@@ -126,7 +126,7 @@ img{
 
 }
 #spe{
-	position: fixed;
+	position: absolute;
 	top: 50px;
 	background-color: rgba(194, 188, 184, 0.7);
 	text-align: center;
